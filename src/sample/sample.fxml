@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="boton1" mnemonicParsing="false" onMouseClicked="#botonClicado" onMouseExited="#colorearNegro" onMouseMoved="#bHover1" text="Rojo" />
+            <Button fx:id="boton3" mnemonicParsing="false" onMouseClicked="#botonClicado" onMouseExited="#colorearNegro" onMouseMoved="#bHover3" text="Azul" GridPane.rowIndex="2" />
+            <Button fx:id="boton2" mnemonicParsing="false" onMouseClicked="#botonClicado" onMouseExited="#colorearNegro" onMouseMoved="#bHover2" text="Amarillo" GridPane.rowIndex="1" />
+            <Label fx:id="textView1" text="Texto 1" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Label fx:id="textView2" text="Texto2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="textView3" text="Texto 3" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
