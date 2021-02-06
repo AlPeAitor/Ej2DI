@@ -35,8 +35,6 @@ public class Controller {
     @FXML
     private void bHover1() {
         textView1.setTextFill(Color.RED);
-        System.out.println(textView1.getLabelFor());
-        textView1.
     }
 
     @FXML
